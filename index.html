@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alessandro Dev | Full Stack Developer</title>
+  <meta name="description" content="Professional portfolio of John Doe, a Full Stack Developer specializing in modern web technologies and user-centered design.">
+  <meta property="og:title" content="John Doe | Full Stack Developer">
+  <meta property="og:description" content="Professional portfolio of John Doe, a Full Stack Developer specializing in modern web technologies and user-centered design.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://johndoe.dev">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">Alessandro<span>.dev</span></a>
+        
+        <!-- Desktop Navigation -->
+        <div class="nav-links">
+          <button onclick="scrollToSection('home')" class="nav-link">Home</button>
+          <button onclick="scrollToSection('about')" class="nav-link">Sobre</button>
+          <button onclick="scrollToSection('skills')" class="nav-link">Habilidades</button>
+          <button onclick="scrollToSection('projects')" class="nav-link">Projetos</button>
+          <button onclick="scrollToSection('contact')" class="nav-link">Contato</button>
+        </div>
+            
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+      
+      <!-- Mobile Navigation -->
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-links">
+          <button onclick="scrollToSection('home')" class="mobile-nav-link">Home</button>
+          <button onclick="scrollToSection('about')" class="mobile-nav-link">Sobre</button>
+          <button onclick="scrollToSection('skills')" class="mobile-nav-link">Habilidades</button>
+          <button onclick="scrollToSection('projects')" class="mobile-nav-link">Projetos</button>
+          <button onclick="scrollToSection('contact')" class="mobile-nav-link">Contato</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text animate-left">
+            <h1>Olá, eu sou <span class="text-primary">Alessandro.Dev</span></h1>
+            <h2>Full Stack Developer</h2>
+            <p>
+                Com a paixão de um futuro Engenheiro de Software, eu transformo ideias e problemas do mundo real em soluções digitais bem estruturadas, priorizando sempre a clareza, a funcionalidade e o código sustentável.
+            </p>
+            <div class="hero-buttons">
+              <button class="primary-btn" onclick="scrollToSection('projects')">
+                Veja meu trabalho
+              </button>
+              <button class="outline-btn" onclick="scrollToSection('contact')">
+                Entre em contato comigo
+              </button>
+            </div>
+            
+            <div class="social-links">
+              <a href="https://github.com/Alessandr0gabriel" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/alessandro-gabriel-716328366/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://x.com/alessandro_876" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="mailto:ag9333091@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="hero-image animate-right">
+            <div class="image-container">
+              <img 
+                src="https://img.freepik.com/vetores-gratis/laptop-com-icone-de-codigo-isometrico-de-programa-desenvolvimento-de-software-e-aplicacoes-de-programacao-neon-escuro_39422-971.jpg" 
+                alt="Teste Dev - Full Stack Developer" 
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">Sobre mim</h2>
+        
+        <div class="about-content">
+          <div class="about-text animate-item">
+            <h3>Minha jornada</h3>
+            <p>
+               Minha jornada na programação começou no final de 2024, e desde então, tenho me dedicado a aprimorar minhas habilidades neste campo. Atualmente, estou cursando Engenharia de Software, o que solidifica minha paixão em transformar problemas complexos em soluções digitais elegantes. Gosto de codificar e ver o impacto de encontrar a lógica perfeita para um desafio.
+            </p>
+            <p>
+                Embora minhas tecnologias favoritas ainda estejam em construção, meu compromisso é focado em escrever código limpo e sustentável e, mais importante, em aprender constantemente as tecnologias mais modernas do mercado.
+            </p>
+            <p>
+                No meu tempo livre, busco recarregar as energias para manter o equilíbrio: gosto de sair para relaxar, praticar academia e jogar vôlei.
+            </p>
+            <a href="#" class="text-link">
+                Saiba mais sobre minha experiência
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          
+          <div class="about-features">
+            <div class="feature-card animate-item">
+              <div class="feature-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4>Desenvolvimento Web</h4>
+              <p>Construindo aplicações web responsivas e acessíveis com frameworks modernos</p>
+            </div>
+            
+            <div class="feature-card animate-item">
+              <div class="feature-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h4>UI/UX Design</h4>
+              <p>Creating intuitive, visually appealing user experiences</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title">Minhas Habilidades</h2>
+        
+        <div class="skills-content">
+          <!-- Technical Skills -->
+          <div class="technical-skills animate-item">
+            <h3>Habilidades técnicas</h3>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>JavaScript / TypeScript</span>
+                <span>10%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 10%;"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Node.js & Express</span>
+                <span>5%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 5%;"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>HTML5 & CSS3</span>
+                <span>50%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 50%;"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>SQL & NoSQL Databases</span>
+                <span>20%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 20%;"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Technologies -->
+          <div class="technologies animate-item">
+            <h3>Tecnologias</h3>
+            
+            <div class="tech-grid">
+              <div class="tech-card">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+              </div>
+              
+              <div class="tech-card">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+              </div>
+              
+              <div class="tech-card">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+              
+              <div class="tech-card">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              
+              <div class="tech-card">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              
+              <div class="tech-card">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Meus Projetos</h2>
+        
+        <p class="section-description">
+            Aqui estão alguns dos meus projetos recentes. Cada um foi cuidadosamente elaborado para resolver problemas específicos
+            e demonstrar diferentes habilidades técnicas.
+        </p>
+        
+        <div class="projects-grid">
+          <div class="project-card animate-item">
+            <img 
+              src="gallery/banner.png" 
+              alt="E-commerce Platform project screenshot" 
+            />
+            <div class="project-content">
+              <h3>Plataforma de E-commerce</h3>
+              <p>Uma plataforma de compras online completa com gerenciamento de produtos, funcionalidade de carrinho.</p>
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Alessandr0gabriel/bruta-lanches" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="https://alessandr0gabriel.github.io/bruta-lanches/" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card animate-item">
+            <img 
+              src="gallery/image.png" 
+              alt="Task Management App project screenshot" 
+            />
+            <div class="project-content">
+              <h3>Plataforma Institucional e Captação de Recursos: Lar São José</h3>
+              <p>Plataforma Institucional desenvolvida em 2025 (trabalho acadêmico) para o ACPIC Lar São José. O website é um portal de transparência focado na captação de doações (Pix e lista de itens) e na divulgação da missão da instituição.</p>
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Alessandr0gabriel/asilo-Lar-S-o-Jos-" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="https://alessandr0gabriel.github.io/asilo-Lar-S-o-Jos-/" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="view-all-projects">
+          <button class="primary-btn">
+            Ver todos os projetos
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Entre em contato</h2>
+        
+        <p class="section-description">
+            Tem um projeto em mente ou quer discutir uma possível colaboração? Entre em contato e entrarei em contato o mais breve possível.
+        </p>
+        
+        <div class="contact-content">
+          <div class="contact-form animate-item">
+            <form id="contactForm"  action="https://formspree.io/f/mzzkndjk" method="POST">
+              <input type="text" name="_gotcha" style="display:none;" />
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                <span class="error-message" id="nameError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="teste.test@example.com" required>
+                <span class="error-message" id="emailError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Assunto</label>
+                <input type="text" id="subject" name="subject" placeholder="Inquérito de Projeto" required>
+                <span class="error-message" id="subjectError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" placeholder="Sua mensagem aqui..." required></textarea>
+                <span class="error-message" id="messageError"></span>
+              </div>
+              
+              <button type="submit" class="primary-btn submit-btn">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+          
+          <div class="contact-info animate-item">
+            <h3>Informações de contato</h3>
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h4>E-mail</h4>
+                <a href="mailto:teste.test@example.com">ag9333091@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info-content">
+                <h4>Telefone</h4>
+                <a href="tel:+5544997454394">+55 (44) 9 9745-4394</a>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h4>Localização</h4>
+                <p>Mandaguari, PR</p>
+              </div>
+            </div>
+            
+            <div class="social-connect">
+              <h4>Conecte-se comigo</h4>
+              <div class="social-icons">
+                <a href="https://github.com/Alessandr0gabriel" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/alessandro-gabriel-716328366/" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://x.com/alessandro_876" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:ag9333091@gmail.com">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <button onclick="scrollToSection('home')" class="footer-logo-btn">
+            Alessandro<span>.dev</span>
+          </button>
+          <p>Construindo experiências digitais excepcionais.</p>
+        </div>
+        
+        <div class="footer-social">
+          <div class="social-icons">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="mailto:john.doe@example.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <p>&copy; <span id="currentYear"></span> Alessandro.Dev. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTopBtn" class="scroll-top-btn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <div class="toast-content">
+      <div class="toast-icon success">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="toast-message-container">
+        <div class="toast-title">Sucesso</div>
+        <div class="toast-message">Sua mensagem foi enviada com sucesso!</div>
+      </div>
+      <button class="toast-close" onclick="closeToast()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
