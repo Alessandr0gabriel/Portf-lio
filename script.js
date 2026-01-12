@@ -5,6 +5,7 @@ const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 const toast = document.getElementById("toast");
 const contactForm = document.getElementById("contactForm");
 const currentYearSpan = document.getElementById("currentYear");
+const viewAllProjectsBtn = document.querySelector(".view-all-projects .primary-btn");
 
 // Set current year in footer
 currentYearSpan.textContent = new Date().getFullYear();
@@ -61,6 +62,13 @@ scrollToTopBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+if (viewAllProjectsBtn) {
+  viewAllProjectsBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    showToast('error', 'Aviso', 'Projetos em andamento');
+  });
+}
 
 // Contact form submission
 if (contactForm) {
@@ -245,3 +253,4 @@ window.addEventListener("DOMContentLoaded", () => {
     link.setAttribute("rel", "noopener noreferrer");
   });
 });
+
